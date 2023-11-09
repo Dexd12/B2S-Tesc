@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <body>
+
+    <head>
+        <body>
+    
+          <title>B2S</title>
+
+      </head>
+    <body>
+
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="Style.css">
+        <style>
+
+        @import url('https://fonts.cdnfonts.com/css/adobe-gurmukhi-2');
+        </style>          
+
+  
+    </head>
+    <body>
+        <img id="Logo" src="Imagenes/Logo de login.png">
+        <div id="fondos"></div>
+         <div class="Registro">
+          <h1>Iniciar Sesión</h1>
+           <form method="post">
+             <div class="username">
+              <input type="text" required placeholder="Nombre de usuario">
+               </div>
+                <div class="username">
+                <input type="password" required placeholder="Contraseña">
+                </div>
+                <button id="boton" class="button">Iniciar</button>
+                <div class="Registrarse">
+                .<div class=""></div><a href="#"></a>
+                </div>
+            </form>
+        </div>
+    
+        <script>
+
+            var users = {
+            "Enerio": "123456",
+            "Lia": "12345",  
+            "Ricardo": "1234",
+            "Ailyn": "123",
+                                                             
+            };
+
+            document.getElementById("boton").addEventListener("click", function(event) {
+                event.preventDefault();
+
+                var username = document.querySelector('input[type="text"]').value;
+                var password = document.querySelector('input[type="password"]').value;
+    
+                if (users[username] && users[username] === password) {
+                 
+                    window.location.href = "Menu.html";
+                } else {
+                
+                    alert("Credenciales incorrectas. Intente de nuevo.");
+                }
+            });
+        </script>
+
+    </body>
+    </html>
+                    
+  
+             
+
+  </body>
+</head>
+</html>
